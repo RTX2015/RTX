@@ -128,3 +128,76 @@ section{
     font-size: 80px;
     text-shadow: 5px 5px 0 #000000;
 }
+
+.moving-cloud{
+    background: url(img/img/cloud.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: cloud-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cloud-move{
+    from{transform: translateY(0px);}
+    to{transform: translateY(70px);}
+}
+
+.about-content{
+    width: 700px;
+    height: 270px;
+    background: #792AFF;
+    padding-left: 40px ;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+.about-title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 60px;
+    font-family: 'Comfortaa';
+}
+
+.about-text{
+    margin-right: 20px;
+}
+
+.about-card{
+    background-image: 
+        url(img/img/form2.png);
+    background-repeat: 
+                 no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: absolute;
+    left: 500px;
+    bottom: -35px;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+}
+
+.about-card img{
+    padding-bottom: 20px;
+}
