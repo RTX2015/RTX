@@ -185,9 +185,6 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    position: absolute;
-    left: 500px;
-    bottom: -35px;
 }
 
 .about-card p{
@@ -398,7 +395,7 @@ nav{
     }
 
     .about-block{
-        flex-direction: column;
+        
         margin-top: 20px;
         padding: 0;
     }
@@ -416,6 +413,7 @@ nav{
     }
 
     .about-content{
+        flex-direction: column;
         width: 75%;
         height: 250px;
         margin-bottom: 20px;
@@ -456,7 +454,7 @@ nav{
         width: 80%;
     }
 
-    .comment-block{
+    .comments-block{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -466,10 +464,29 @@ nav{
 
     .comment{
         background-image: url(img/img/comment-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .comment p{
         font-size: 15px;
         max-width: 290px;
+    }
+
+    .button{
+        width: 150px;
+        height: 40px;
+    }
+
+    .button a{
+        font-size: 15px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-info p{
+       font-size: 12px;
     }
 }
