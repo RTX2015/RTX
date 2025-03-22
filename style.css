@@ -70,7 +70,7 @@ section{
     font-family: 'Comfortaa';
 }
 
-.button{
+.button, .button-about{
     width: 200px;
     height: 60px;
     border-radius: 100px;
@@ -185,6 +185,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    
 }
 
 .about-card p{
@@ -419,6 +420,7 @@ nav{
 
     .main-content{
         max-width: 320px;
+        margin-bottom: 15px;
     }
 
     .main-title{
@@ -449,19 +451,39 @@ nav{
         order: -1;
         background-size: contain;
         padding-top: 20px;
-        width: 326px;
-        height: 296px;
+        width: 350px;
+        height: 186px;
+        position: absolute;
+        bottom: 210px;
+        left: 50px;
+    }
+
+    .about-card p{
+        font-size: 12px;
+       
     }
 
     .about-card img{
-        width: 85%;
+        position: relative;
+        top: 12px;
+        right: 60px;
+        width: 55%;
     }
 
     .about-content{
         flex-direction: column;
-        width: 75%;
-        height: 250px;
+        width: 60%;
+        height: 200px;
         margin-bottom: 20px;
+        top: 100px;
+    }
+
+    .button-about{
+        position: absolute;
+        bottom: 10px;
+        width: 150px;
+        height: 40px;
+        z-index: 2;
     }
 
     .about-title{
